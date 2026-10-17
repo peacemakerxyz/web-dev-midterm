@@ -1,21 +1,44 @@
+@import url('https://googleapis.com');
+
 body {
     display: flex;
     height: 1000px;
     width: 650px;
     margin: 40px auto;
     border: 1px solid black;
-}
-
-body>#head {
-    display: flex;
-    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
 }
 
 .head {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
+.head1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 315px;
+}
+
+#myname {
+    margin-bottom: 0;
+}
+
+#szbtn {
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+    height: 28px;
+    width: 30x;
+    border-radius: 5px;
+}
+
+#school-address {
+    margin-top: 5px;
+}
+
+/* Image Styles */
 img.dawg {
     border-radius: 15px;
 
@@ -24,13 +47,4 @@ img.dawg {
 img.light {
     height: 20px;
     width: 20px;
-}
-
-#szbtn {
-    aspect-ratio: 1 / 1;
-}
-
-.head1 {
-    display: flex;
-    gap: 310px;
 }
