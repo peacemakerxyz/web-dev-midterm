@@ -1,14 +1,18 @@
 @import url('https://googleapis.com');
 
+:root {
+    --font-main: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+}
+
 body {
     display: flex;
     height: 1000px;
     width: 650px;
     margin: 40px auto;
     border: 1px solid black;
-    font-family: 'Inter', sans-serif;
 }
 
+/* head section */ 
 .head {
     display: flex;
     justify-content: flex-start;
@@ -18,12 +22,15 @@ body {
 .head1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 315px;
+    gap: 300px;
+    margin-left: 10px;
 }
 
 #myname {
     margin-bottom: 0;
+
 }
+
 
 #szbtn {
     display: flex;
@@ -32,11 +39,47 @@ body {
     height: 28px;
     width: 30x;
     border-radius: 5px;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid gray;
 }
 
 #school-address {
     margin-top: 5px;
+    margin-left: 11px;
+    color: #3B3B3B;
 }
+
+#section {
+    margin-left: 11px;
+    margin-bottom: 10px;
+}
+
+/* about me section */
+.about {
+    display: flex;
+}
+
+
+
+/*Button Styles */
+.call {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 0px 10px;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+.sendmsg {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 7px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
 
 /* Image Styles */
 img.dawg {
