@@ -11,49 +11,70 @@ body {
     width: 650px;
     margin: 40px auto;
     border: 1px solid black;
+    font-family: var(--font-main);
 }
 
-/* head section */ 
+/* head section
+   ┌─────────┬──────────────────────────────┐
+   │         │  Name              [toggle]  │
+   │  photo  │  Location                    │
+   │         │  Role                        │
+   │         │  [Call] [Message]            │
+   └─────────┴──────────────────────────────┘
+*/
 .head {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
 }
 
+/* right column grows to fill leftover width */
+.head-infos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+/* name + toggle on one row, pushed to opposite ends */
 .head1 {
     display: flex;
-    flex-wrap: wrap;
-    gap: 300px;
-    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #myname {
-    margin-bottom: 0;
-
+    margin: 0;
 }
-
 
 #szbtn {
     display: flex;
-    align-self: center;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
     height: 28px;
-    width: 30x;
+    width: 30px;
     border-radius: 5px;
     padding: 3px;
     background-color: white;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 #school-address {
-    margin-top: 5px;
-    margin-left: 11px;
+    margin: 5px 0 0;
     color: #3B3B3B;
 }
 
 #section {
-    margin-left: 11px;
-    margin-bottom: 10px;
+    margin: 4px 0 12px;
+}
+
+/* buttons sit in a horizontal row under the text */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* about me section */
@@ -61,34 +82,36 @@ body {
     border: 1px solid black;
     margin-top: 30px;
     height: 300px;
-    width: 350px;
+    width: 650px;
 }
 
+.education {
+    display: flex;
+    justify-content: flex-end;
+}
 
-
-/*Button Styles */
+/* Button Styles */
 .call {
     background-color: black;
     border: 1px solid black;
     color: white;
-    margin: 0px 10px;
     padding: 7px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .sendmsg {
     background-color: white;
     border: 1px solid gray;
     padding: 7px 10px;
-    margin: 0px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
-
 
 /* Image Styles */
 img.dawg {
     border-radius: 15px;
-
+    flex-shrink: 0;
 }
 
 img.light {
